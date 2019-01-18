@@ -26,12 +26,6 @@ class Pokemon extends React.Component {
         this.setState({name, imageUrl, pokemonIndex})
     }
 
-    showModal = () => {
-        this.setState({
-          modal: !this.state.modal
-        });
-      }
-
     render() {
 
         return (
@@ -49,18 +43,9 @@ class Pokemon extends React.Component {
                     <div className="card-body mx-auto">
                         <h1 className="card-title clrWhite">{this.state.name}</h1>
                         <p className="text-center clrWhite">ID #{this.state.pokemonIndex}</p>
-                        <Button color="danger" onClick={this.showModal}>More</Button>
-                        <Modal isOpen={this.state.modal} toggle={this.showModal}>
-                            <ModalHeader toggle={this.showModal}>{this.state.name}</ModalHeader>
-                            <ModalBody>
-                                Truc
-                            </ModalBody>
-                            <ModalFooter>
-                                <Link to={`pokemon/${this.state.pokemonIndex}`}>
-                                    <Button color="primary">Stats</Button>
-                                </Link>
-                            </ModalFooter>
-                        </Modal>
+                        <Link to={`pokemon/${this.state.pokemonIndex}`}>
+                            <Button color="danger">Stats</Button>
+                        </Link>
                     </div>
                 </div>
             </div>
