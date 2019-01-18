@@ -31,14 +31,12 @@ class PokemonSearch extends React.Component {
             b => b.name.toLowerCase().trim().indexOf(this.state.input) > -1)
             .map(c => c.name);
         this.setState({ matchingPokemon})
-        console.log(this.state.matchingPokemon)
     }
 
     render() {
         return (
             <div>
-                <input type="text" value={this.state.input} onChange={this.searchPokemon.bind(this)} />
-                <div>
+                <input className="form-control" type="text" value={this.state.input} onChange={this.searchPokemon.bind(this)} />
                 <div>
                     {this.state.matchingPokemon.length
                     ? 
@@ -47,7 +45,6 @@ class PokemonSearch extends React.Component {
                         </div>) 
                     : 
                         (<h1 className="clrWhite">Waiting for search</h1>)}
-                </div>
                 </div>
             </div>
         );
