@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Pokemon from './Pokemon';
+import PokemonSearch from './PokemonSearch';
 
 class PokemonList extends React.Component {
     constructor(props) {
@@ -26,6 +27,7 @@ class PokemonList extends React.Component {
     render() {
         return (
             <div>
+                <PokemonSearch/>
                 <div>
                     {this.state.pokemonData
                     ? 
