@@ -6,7 +6,7 @@ class PokemonList extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            url: 'https://pokeapi.co/api/v2/pokemon/',
+            url: 'https://pokeapi.co/api/v2/pokemon/?limit=949',
             pokemonData: null,
             count: 80
         }
