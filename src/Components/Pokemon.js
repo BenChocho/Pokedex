@@ -22,7 +22,6 @@ class Pokemon extends React.Component {
         const url = this.props.url;
         const pokemonIndex = url.split('/')[url.split('/').length -2];
         const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`;
-
         this.setState({name, imageUrl, pokemonIndex})
     }
 
