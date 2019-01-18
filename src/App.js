@@ -5,7 +5,6 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from "./Components/Containers/Home";
 import PokemonInfos from './Components/PokemonInfos';
-import PokemonSearch from './Components/PokemonSearch';
 
 class App extends Component {
   render() {
@@ -13,7 +12,6 @@ class App extends Component {
       <Router>
         <div className="App">
           <div className="container">
-          <PokemonSearch/>
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/pokemon/:pokemonIndex" component={PokemonInfos}/>
