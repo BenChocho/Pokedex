@@ -1,0 +1,39 @@
+body {
+  background-color: black !important;
+}
+
+/** GLOBAL **/
+.App {
+  padding: 2rem;
+}
+
+.clrWhite {
+  color: white !important;
+}
+
+/** POKEMON CARD STYLE **/
+.card {
+  background-color: #181b1d !important;
+}
+
+.card-title {
+  font-size: 2rem;
+  margin-bottom: 0 !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.pokemonImg {
+  width: 96px;
+  height: 96px;
+  margin: auto;
+}
+
+/** LOADER **/
+.loader {
+  width: 80px;
+  height: 60px;
+  margin: 0 auto;
+}
