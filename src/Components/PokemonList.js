@@ -35,7 +35,7 @@ class PokemonList extends React.Component {
                     : 
                         (<h1 className="clrWhite">Waiting for Pokemons</h1>)}
                 </div>
-                <button type="button" className="btn btn-warning" onClick={this.addMoreData.bind(this)}>Load More</button>
+                <button type="button" className="btn btn-warning col" onClick={this.addMoreData.bind(this)}>Load More</button>
             </div>
         );
     }
