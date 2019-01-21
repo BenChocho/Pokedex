@@ -1,6 +1,6 @@
-## [DEMO](https://pokedex-with-pokeapi.herokuapp.com/#/)
+## Link for : [DEMO](https://pokedex-with-pokeapi.herokuapp.com/#/)
 
-------------------------------------------------------------------------------------------------------------------------------
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
